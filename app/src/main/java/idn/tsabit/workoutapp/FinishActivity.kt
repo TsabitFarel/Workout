@@ -6,7 +6,6 @@ import android.util.Log
 import kotlinx.android.synthetic.main.activity_finish.*
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.ArrayList
 
 class FinishActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,6 +1,5 @@
 package idn.tsabit.workoutapp
 
-import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
@@ -83,7 +82,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun setCountProgressBar() {
         progressBar.progress = countDownProgress
-        countDownTimer = object : CountDownTimer(1000, 1000) {
+        countDownTimer = object : CountDownTimer(10000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 countDownProgress++
                 progressBar.progress = 10-countDownProgress
@@ -128,7 +127,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun setExerciseProgress() {
         progressBarExercise.progress = countExerciseProgress
-        countExercise = object : CountDownTimer(1000, 1000) {
+        countExercise = object : CountDownTimer(30000, 1000) {
             override fun onTick(p0: Long) {
                 countExerciseProgress++
                 progressBarExercise.progress = 30-countExerciseProgress
